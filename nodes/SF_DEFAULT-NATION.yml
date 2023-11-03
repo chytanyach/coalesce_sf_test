@@ -1,0 +1,79 @@
+steps:
+  NATION-8cb85d46-9e61-4b34-9c4c-4e67d644274e:
+    operation:
+      database: ""
+      dataset: ""
+      deployEnabled: true
+      description: Nation data as defined by TPC-H
+      locationID: ""
+      locationName: SF_DEFAULT
+      metadata:
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 68489a1a-8454-4825-92ef-3a0924ba694c
+              stepCounter: 8cb85d46-9e61-4b34-9c4c-4e67d644274e
+            config: {}
+            dataType: NUMBER(38,0)
+            defaultValue: ""
+            description: ""
+            name: N_NATIONKEY
+            nullable: false
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: dfd551f8-26b1-4642-8928-eeef01338bce
+              stepCounter: 8cb85d46-9e61-4b34-9c4c-4e67d644274e
+            config: {}
+            dataType: VARCHAR(25)
+            defaultValue: ""
+            description: ""
+            name: N_NAME
+            nullable: false
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 9906c2af-403f-472a-a553-8b71d729fda4
+              stepCounter: 8cb85d46-9e61-4b34-9c4c-4e67d644274e
+            config: {}
+            dataType: NUMBER(38,0)
+            defaultValue: ""
+            description: ""
+            name: N_REGIONKEY
+            nullable: false
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 066f913e-5652-4f29-83b0-ff3f334b6f48
+              stepCounter: 8cb85d46-9e61-4b34-9c4c-4e67d644274e
+            config: {}
+            dataType: VARCHAR(152)
+            defaultValue: ""
+            description: ""
+            name: N_COMMENT
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+        join:
+          joinCondition: FROM {{ ref('SF_DEFAULT', 'NATION') }}
+      name: NATION
+      schema: ""
+      sqlType: Source
+      table: NATION
+      type: sourceInput
+    stepCounter: 8cb85d46-9e61-4b34-9c4c-4e67d644274e

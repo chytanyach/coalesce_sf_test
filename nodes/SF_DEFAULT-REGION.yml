@@ -1,0 +1,64 @@
+steps:
+  REGION-a0e91d40-9325-4bb9-adf7-733179f1e505:
+    operation:
+      database: ""
+      dataset: ""
+      deployEnabled: true
+      description: Region data as defined by TPC-H
+      locationID: ""
+      locationName: SF_DEFAULT
+      metadata:
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: b8c41474-da76-4877-b268-a90b4b8dc494
+              stepCounter: a0e91d40-9325-4bb9-adf7-733179f1e505
+            config: {}
+            dataType: NUMBER(38,0)
+            defaultValue: ""
+            description: ""
+            name: R_REGIONKEY
+            nullable: false
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 28a6076f-2819-49df-8b35-d3af8d71dcf0
+              stepCounter: a0e91d40-9325-4bb9-adf7-733179f1e505
+            config: {}
+            dataType: VARCHAR(25)
+            defaultValue: ""
+            description: ""
+            name: R_NAME
+            nullable: false
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 41439dc3-9f91-4979-814f-a81e595a07d1
+              stepCounter: a0e91d40-9325-4bb9-adf7-733179f1e505
+            config: {}
+            dataType: VARCHAR(152)
+            defaultValue: ""
+            description: ""
+            name: R_COMMENT
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+        join:
+          joinCondition: FROM {{ ref('SF_DEFAULT', 'REGION') }}
+      name: REGION
+      schema: ""
+      sqlType: Source
+      table: REGION
+      type: sourceInput
+    stepCounter: a0e91d40-9325-4bb9-adf7-733179f1e505
