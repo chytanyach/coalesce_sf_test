@@ -1,0 +1,49 @@
+steps:
+  EMP-262336ac-5907-4cdd-923b-1c8bce3413ed:
+    operation:
+      database: ""
+      dataset: ""
+      deployEnabled: true
+      description: ""
+      locationID: ""
+      locationName: TEMPSTORAGELOCATION
+      metadata:
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: f7066cfa-bf89-4d3e-88e2-7b90cfbb8b18
+              stepCounter: 262336ac-5907-4cdd-923b-1c8bce3413ed
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: ID
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 53e3429e-fe5f-4d48-99cc-0669ba21d6f8
+              stepCounter: 262336ac-5907-4cdd-923b-1c8bce3413ed
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: NAME
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+        join:
+          joinCondition: FROM {{ ref('TEMPSTORAGELOCATION', 'EMP') }}
+      name: EMP
+      schema: ""
+      sqlType: Source
+      table: EMP
+      type: sourceInput
+    stepCounter: 262336ac-5907-4cdd-923b-1c8bce3413ed
